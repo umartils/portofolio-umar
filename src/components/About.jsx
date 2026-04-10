@@ -283,6 +283,14 @@ export default function About() {
                   name: 'Raspberry Pi',
                   color: 'bg-pink-50 text-pink-600 border-pink-200',
                 },
+                {
+                  name: 'Python',
+                  color: 'bg-yellow-50 text-yellow-700 border-yellow-200',
+                },
+                {
+                  name: 'C',
+                  color: 'bg-slate-100 text-slate-600 border-slate-300',
+                },
               ].map((tech) => (
                 <span
                   key={tech.name}
