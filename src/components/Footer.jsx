@@ -13,7 +13,7 @@ const socialLinks = [
 ]
 export default function Footer() {
   return (
-    <div className="mt-32 py-4 flex md:flex-row flex-col gap-6 md:gap-0 justify-between items-center">
+    <footer className="mt-32 py-4 flex md:flex-row flex-col gap-6 md:gap-0 justify-between items-center">
       <h1 className="text-2xl font-bold">Portofolio</h1>
       {/* <div className="flex items-center gap-6">
             {navLinks.map((link) => (
@@ -38,6 +38,6 @@ export default function Footer() {
       <p className="text-xs text-zinc-400">
         © {new Date().getFullYear()} Umar Tilmisani. All rights reserved.
       </p>
-    </div>
+    </footer>
   );
 }
