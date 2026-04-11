@@ -112,7 +112,7 @@ export const listProyek = [
   {
     id: 1,
     gambar: Proyek1,
-    nama: 'AI Smart Crossing Device',
+    nama: 'AI Smart Crossing System',
     desk: 'Proyek ini merupakan solusi smart city yang mengotomatisasi lampu penyebrangan jalan (pedestrian crossing) menggunakan teknologi Computer Vision.',
     tools: [
       'AI',
