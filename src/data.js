@@ -1,6 +1,6 @@
 // import HeroImage from "./assets/hero-img.webp";
-import HeroImage from './assets/avatar.png';
-import FormalImage from './assets/hero.png';
+import HeroImage from './assets/avatar.jpg';
+import FormalImage from './assets/hero.jpg';
 
 const Image = {
   HeroImage,
