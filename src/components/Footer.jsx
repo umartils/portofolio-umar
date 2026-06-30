@@ -1,16 +1,12 @@
 /* eslint-disable react/react-in-jsx-scope */
-const navLinks = [
-  { href: "#home", label: "Home" },
-  { href: "#about", label: "About" },
-  { href: "#certificates", label: "Certificates" },
-  { href: "#projects", label: "Projects" },
-];
-
 const socialLinks = [
-    { href: "https://github.com/umartils/", icon: "ri-github-fill" },
-    { href: "https://www.instagram.com/umartils_", icon: "ri-instagram-fill" },
-    { href: "https://www.linkedin.com/in/umartils/", icon: "ri-linkedin-box-fill" },
-]
+  { href: 'https://github.com/umartils/', icon: 'ri-github-fill' },
+  { href: 'https://www.instagram.com/umartils_', icon: 'ri-instagram-fill' },
+  {
+    href: 'https://www.linkedin.com/in/umartils/',
+    icon: 'ri-linkedin-box-fill',
+  },
+];
 export default function Footer() {
   return (
     <footer className="mt-32 py-4 flex md:flex-row flex-col gap-6 md:gap-0 justify-between items-center">
@@ -29,7 +25,7 @@ export default function Footer() {
             href={link.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-zinc-400 hover:text-violet-500 transition-colors"
+            className="text-zinc-400 hover:text-amber-700 transition-colors"
           >
             <i className={`${link.icon} ri-2x`}></i>
           </a>

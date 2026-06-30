@@ -27,15 +27,15 @@ export default function Hero({ loading }) {
       >
         {/* Title */}
         <h1 className="text-4xl md:text-start text-center md:text-5xl font-bold text-slate-900 leading-tight mb-3">
-          Halo, Saya <span className="text-sky-600">Umar Tilmisani</span>
+          Halo, Saya <span className="text-stone-700">Umar Tilmisani</span>
         </h1>
 
         {/* Certification Badge */}
         <div className="flex flex-wrap md:justify-start justify-center md:gap-2 gap-1 mb-4">
-          <span className="md:px-3 px-2.5 py-1 text-xs font-medium bg-sky-50 text-sky-600 border border-sky-200 rounded-full">
+          <span className="md:px-3 px-2.5 py-1 text-xs font-medium bg-amber-50 text-amber-700 border border-amber-200 rounded-full">
             <i className="ri-award-fill ri-sm" /> Microsoft Azure AI Certified
           </span>
-          <span className="md:px-3 px-2.5 py-1 text-xs font-medium bg-sky-50 text-sky-600 border border-sky-200 rounded-full">
+          <span className="md:px-3 px-2.5 py-1 text-xs font-medium bg-amber-50 text-amber-700 border border-amber-200 rounded-full">
             <i className="ri-award-fill ri-sm" /> Microsoft Office Specialist
           </span>
         </div>
@@ -59,7 +59,7 @@ export default function Hero({ loading }) {
         <div className="flex flex-wrap md:justify-start justify-center gap-4 mb-8">
           <a
             href="#projects"
-            className="flex items-center justify-center gap-2 px-6 py-3 bg-sky-600 text-white rounded-full shadow hover:bg-sky-700 transition"
+            className="flex items-center justify-center gap-2 px-6 py-3 bg-amber-200 text-amber-900 rounded-full shadow-sm hover:bg-amber-300 transition"
           >
             <i className="ri-eye-line ri-sm" />
             Lihat Project
@@ -82,7 +82,7 @@ export default function Hero({ loading }) {
               href={link.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-11 h-11 flex items-center justify-center rounded-full border border-slate-300 text-slate-600 hover:text-sky-600 hover:border-sky-500 transition"
+              className="w-11 h-11 flex items-center justify-center rounded-full border border-slate-300 text-slate-600 hover:text-amber-700 hover:border-amber-500 transition"
             >
               <i className={`${link.icon} text-xl`}></i>
             </a>
@@ -93,24 +93,24 @@ export default function Hero({ loading }) {
       {/* RIGHT */}
       <div className="order-1 md:mt-0 mt-5 md:order-2 flex flex-col items-center relative">
         {/* Glow (lebih subtle untuk light mode) */}
-        <div className="absolute w-72 h-72 md:w-96 md:h-96 bg-sky-500/10 rounded-full blur-3xl"></div>
+        <div className="absolute w-72 h-72 md:w-96 md:h-96 bg-amber-500/10 rounded-full blur-3xl"></div>
 
         {/* Image */}
         <img
           src={DataImage.HeroImage}
           alt="Hero"
           loading="lazy"
-          className={`relative w-60 md:w-80 rounded-full object-cover shadow-xl ring-4 ring-sky-200 transition duration-700 hover:scale-105 ${
+          className={`relative w-60 md:w-80 rounded-full object-cover shadow-xl transition duration-700 hover:scale-105 ${
             !loading ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'
           }`}
         />
 
         {/* Badge */}
-        <div className="mt-6 px-5 py-2 bg-sky-50 border border-sky-200 hover:bg-sky-100 rounded-xl shadow-sm flex justify-center">
-          <span className="text-sm text-center text-sky-600 font-medium">
+        {/* <div className="mt-6 px-5 py-2 bg-amber-50 border border-amber-200 hover:bg-amber-100 rounded-xl shadow-sm flex justify-center">
+          <span className="text-sm text-center text-amber-700 font-medium">
             Fullstack Developer • AI/ML Engineer • IoT Enthusiast
           </span>
-        </div>
+        </div> */}
       </div>
     </section>
   );

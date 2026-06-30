@@ -13,7 +13,7 @@ export default function About() {
       </h1>
 
       <div
-        className="max-w-4xl mx-auto p-8 md:p-10 bg-linear-to-br from-sky-700 to-sky-800 rounded-3xl shadow-xl border border-sky-500/30"
+        className="max-w-4xl mx-auto p-8 md:p-10 bg-linear-to-br from-amber-50 to-orange-100 rounded-3xl shadow-xl border border-amber-200"
         data-aos="fade-up"
         data-aos-duration="1000"
       >
@@ -24,12 +24,12 @@ export default function About() {
             src={DataImage.FormalImage}
             alt="Umar Tilmisani"
             loading="lazy"
-            className="w-28 h-28 object-cover rounded-xl ring-4 ring-white/30 shadow-md md:hidden"
+            className="w-28 h-28 object-cover rounded-xl ring-4 ring-amber-300/40 shadow-md md:hidden"
           />
 
           {/* Text */}
           <div>
-            <p className="text-white text-center md:text-start text-base md:text-lg leading-relaxed opacity-95">
+            <p className="text-amber-900 text-center md:text-start text-base md:text-lg leading-relaxed opacity-95">
               Saya <span className="font-semibold">Umar Tilmisani</span>, fresh
               graduate Teknik Komputer yang memiliki minat besar di bidang data
               dan kecerdasan buatan. Saya dikenal sebagai pribadi yang ulet,
@@ -47,7 +47,7 @@ export default function About() {
               <span className="font-semibold"> Top-Scoring Student</span>.
             </p>
 
-            <p className="text-white text-center md:text-start text-base md:text-lg leading-relaxed mt-4 opacity-90">
+            <p className="text-amber-900 text-center md:text-start text-base md:text-lg leading-relaxed mt-4 opacity-90">
               Saya juga telah mengikuti berbagai pelatihan di bidang IT,
               khususnya
               <span className="font-semibold"> AI/Machine Learning</span>, yang
@@ -64,7 +64,7 @@ export default function About() {
               .
             </p>
 
-            <p className="text-white text-center md:text-start text-base md:text-lg leading-relaxed mt-4 opacity-90">
+            <p className="text-amber-900 text-center md:text-start text-base md:text-lg leading-relaxed mt-4 opacity-90">
               Saya telah mengerjakan berbagai proyek di bidang
               <span className="font-semibold"> software development</span>,
               <span className="font-semibold"> AI/Machine Learning</span>, dan
@@ -79,17 +79,17 @@ export default function About() {
                 src={DataImage.FormalImage}
                 alt="Umar Tilmisani"
                 loading="lazy"
-                className="w-20 h-20 object-cover rounded-xl ring-4 ring-white/30 shadow-md hidden md:block"
+                className="w-20 h-20 object-cover rounded-xl ring-4 ring-amber-300/40 shadow-md hidden md:block"
               />
 
               <div className="flex flex-wrap justify-center md:justify-start items-center gap-3">
-                <span className="md:px-3 px-2 py-1 text-xs text-slate-50 bg-white/30 rounded-full">
+                <span className="md:px-3 px-2 py-1 text-xs text-amber-900 bg-white/60 rounded-full">
                   Fullstack Developer
                 </span>
-                <span className="md:px-3 px-2 py-1 text-xs text-slate-50 bg-white/30 rounded-full">
+                <span className="md:px-3 px-2 py-1 text-xs text-amber-900 bg-white/60 rounded-full">
                   AI/ML Enthusiast
                 </span>
-                <span className="md:px-3 px-2 py-1 text-xs text-slate-50 bg-white/30 rounded-full">
+                <span className="md:px-3 px-2 py-1 text-xs text-amber-900 bg-white/60 rounded-full">
                   IoT Developer
                 </span>
               </div>
@@ -109,22 +109,22 @@ export default function About() {
         </h1>
 
         <div
-          className="grid lg:grid-cols-3 gap-6"
+          className="grid lg:grid-cols-2 gap-6"
           data-aos="fade-up"
           data-aos-duration="1000"
         >
           {/* Fullstack Developer */}
-          <div className="group flex flex-col p-6 rounded-2xl border border-gray-200 bg-white hover:border-sky-400 hover:shadow-lg transition-all duration-300">
+          <div className="group flex flex-col p-6 rounded-2xl border border-gray-200 bg-white hover:border-amber-400 hover:shadow-lg transition-all duration-300">
             {/* Icon & Title */}
             <div className="flex items-center gap-3 mb-3">
-              <div className="w-11 h-11 rounded-xl bg-sky-100 flex items-center justify-center text-xl">
+              <div className="w-11 h-11 rounded-xl bg-amber-100 flex items-center justify-center text-xl">
                 <i className="ri-macbook-line"></i>
               </div>
               <div>
                 <h3 className="font-bold text-base text-gray-900">
                   Fullstack Developer
                 </h3>
-                <p className="text-xs text-sky-600 font-medium">
+                <p className="text-xs text-amber-700 font-medium">
                   Web & Backend Engineering
                 </p>
               </div>
@@ -215,7 +215,7 @@ export default function About() {
                 },
                 {
                   name: 'TensorFlow',
-                  color: 'bg-amber-50 text-amber-700 border-amber-200',
+                  color: 'bg-orange-50 text-orange-700 border-orange-200',
                 },
                 {
                   name: 'PyTorch',
@@ -273,7 +273,7 @@ export default function About() {
                 },
                 {
                   name: 'ESP',
-                  color: 'bg-sky-50 text-sky-700 border-sky-200',
+                  color: 'bg-cyan-50 text-cyan-700 border-cyan-200',
                 },
                 {
                   name: 'Jetson Nano',
@@ -290,6 +290,68 @@ export default function About() {
                 {
                   name: 'C',
                   color: 'bg-slate-100 text-slate-600 border-slate-300',
+                },
+              ].map((tech) => (
+                <span
+                  key={tech.name}
+                  className={`text-xs px-2.5 py-1 rounded-lg border font-medium ${tech.color}`}
+                >
+                  {tech.name}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* Data Analyst / BI */}
+          <div className="group flex flex-col p-6 rounded-2xl border border-gray-200 bg-white hover:border-amber-400 hover:shadow-lg transition-all duration-300">
+            <div className="flex items-center gap-3 mb-3">
+              <div className="w-11 h-11 rounded-xl bg-amber-100 flex items-center justify-center text-xl">
+                <i className="ri-bar-chart-box-line"></i>
+              </div>
+              <div>
+                <h3 className="font-bold text-base text-gray-900">
+                  Data Analyst / BI
+                </h3>
+                <p className="text-xs text-amber-700 font-medium">
+                  Data Analytics & Reporting
+                </p>
+              </div>
+            </div>
+
+            {/* Description */}
+            <p className="text-sm text-gray-500 leading-relaxed mb-4">
+              Mengolah, menganalisis, dan memvisualisasikan data untuk
+              menghasilkan insight bisnis, mulai dari query database, dashboard
+              interaktif, hingga laporan berbasis cloud data warehouse.
+            </p>
+
+            <div className="h-px bg-gray-100 mb-4" />
+
+            <div className="flex flex-wrap gap-2 mt-auto">
+              {[
+                {
+                  name: 'SQL',
+                  color: 'bg-blue-50 text-blue-700 border-blue-200',
+                },
+                {
+                  name: 'Python',
+                  color: 'bg-yellow-50 text-yellow-700 border-yellow-200',
+                },
+                {
+                  name: 'Excel',
+                  color: 'bg-green-50 text-green-700 border-green-200',
+                },
+                {
+                  name: 'Looker Studio',
+                  color: 'bg-red-50 text-red-600 border-red-200',
+                },
+                {
+                  name: 'Power BI',
+                  color: 'bg-amber-50 text-amber-700 border-amber-200',
+                },
+                {
+                  name: 'BigQuery',
+                  color: 'bg-indigo-50 text-indigo-700 border-indigo-200',
                 },
               ].map((tech) => (
                 <span

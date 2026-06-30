@@ -133,7 +133,7 @@ export default function Certificates() {
         <button
           onClick={goPrev}
           disabled={currentIndex === 0}
-          className="absolute left-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-white border border-slate-200 shadow-md text-slate-600 hover:text-sky-800 hover:border-sky-700 hover:shadow-sky-100 transition-all duration-200 disabled:opacity-30 disabled:cursor-not-allowed"
+          className="absolute left-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-white border border-slate-200 shadow-md text-slate-600 hover:text-amber-700 hover:border-amber-300 hover:shadow-amber-100 transition-all duration-200 disabled:opacity-30 disabled:cursor-not-allowed"
           aria-label="Previous"
         >
           <i className="ri-arrow-left-s-line text-xl"></i>
@@ -185,7 +185,7 @@ export default function Certificates() {
                   />
                   <div className="absolute inset-0 bg-linear-to-t from-black/40 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition duration-300" />
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
-                    {/* <span className="text-sm font-medium text-white bg-sky-500 px-4 py-2 rounded-full shadow-md flex items-center gap-2">
+                    {/* <span className="text-sm font-medium text-white bg-amber-500 px-4 py-2 rounded-full shadow-md flex items-center gap-2">
                       <i className="ri-eye-line"></i>
                       Detail
                     </span> */}
@@ -203,7 +203,7 @@ export default function Certificates() {
                     <i className="ri-award-line ri-sm"></i>
                     {sertif.bidang}
                   </span>
-                  <h3 className="font-semibold text-base leading-snug mb-2 text-slate-600 group-hover:text-sky-800 transition-colors">
+                  <h3 className="font-semibold text-base leading-snug mb-2 text-slate-600 group-hover:text-amber-700 transition-colors">
                     {sertif.nama}
                   </h3>
                   <div className="flex items-center justify-between mt-4 pt-3 border-t border-slate-100 text-sm text-slate-500">
@@ -226,7 +226,7 @@ export default function Certificates() {
         <button
           onClick={goNext}
           disabled={currentIndex === maxIndex}
-          className="absolute right-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-white border border-slate-200 shadow-md text-slate-600 hover:text-sky-600 hover:border-sky-300 hover:shadow-sky-100 transition-all duration-200 disabled:opacity-30 disabled:cursor-not-allowed"
+          className="absolute right-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-white border border-slate-200 shadow-md text-slate-600 hover:text-amber-700 hover:border-amber-300 hover:shadow-amber-100 transition-all duration-200 disabled:opacity-30 disabled:cursor-not-allowed"
           aria-label="Next"
         >
           <i className="ri-arrow-right-s-line text-xl"></i>
@@ -241,7 +241,7 @@ export default function Certificates() {
             onClick={() => goTo(i)}
             className={`rounded-full transition-all duration-300 ${
               i === currentIndex
-                ? 'w-6 h-2 bg-sky-500'
+                ? 'w-6 h-2 bg-amber-600'
                 : 'w-2 h-2 bg-slate-300 hover:bg-slate-400'
             }`}
             aria-label={`Go to slide ${i + 1}`}
@@ -298,7 +298,7 @@ export default function Certificates() {
                 href={selected.credentials}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-5 inline-flex items-center gap-2 text-sm text-white font-medium bg-sky-500 px-5 py-2.5 rounded-full hover:bg-sky-600 transition-all shadow-sm hover:shadow-sky-200"
+                className="mt-5 inline-flex items-center gap-2 text-sm text-amber-900 font-medium bg-amber-200 px-5 py-2.5 rounded-full hover:bg-amber-300 transition-all shadow-sm"
               >
                 <i className="ri-external-link-line"></i>
                 View Credential

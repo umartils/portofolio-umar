@@ -16,7 +16,7 @@ export default function PreLoader() {
         <div role="status" className="flex flex-col items-center gap-4">
           <svg
             aria-hidden="true"
-            className="animate-spin text-gray-200 fill-blue-600
+            className="animate-spin text-gray-200 fill-amber-700
                        w-8 h-8 
                        sm:w-10 sm:h-10 
                        md:w-12 md:h-12"
