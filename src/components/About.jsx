@@ -24,7 +24,7 @@ export default function About() {
             src={DataImage.FormalImage}
             alt="Umar Tilmisani"
             loading="lazy"
-            className="w-28 h-28 object-cover rounded-xl ring-4 ring-amber-300/40 shadow-md md:hidden"
+            className="w-28 h-28 object-cover rounded-sm ring-4 ring-amber-300/40 shadow-md md:hidden"
           />
 
           {/* Text */}
@@ -79,7 +79,7 @@ export default function About() {
                 src={DataImage.FormalImage}
                 alt="Umar Tilmisani"
                 loading="lazy"
-                className="w-20 h-20 object-cover rounded-xl ring-4 ring-amber-300/40 shadow-md hidden md:block"
+                className="w-20 h-20 object-cover rounded-sm ring-2 ring-amber-300/40 shadow-md hidden md:block"
               />
 
               <div className="flex flex-wrap justify-center md:justify-start items-center gap-3">
